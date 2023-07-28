@@ -1,0 +1,68 @@
+body {
+    background-color: rgb(32, 30, 68);
+    text-align: center;
+    align-items: center;
+}
+
+.search--field{
+    margin: auto;
+    margin-top: 20rem;
+    background-color: rgb(43, 39, 100);
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    padding-top: 0;
+    text-align: left;
+    border-radius: 10px;
+}
+
+h1{
+    font: 'Roboto Condensed';
+    font-size: 3em;
+    color: antiquewhite;
+    margin: 10px auto;
+    margin-left: 2rem;
+    
+}
+
+#food-input {
+    width: 85%;
+    height: 30px;
+    border-radius: 10px;
+    font: 'Roboto Condensed';
+    font-size: 2rem;
+    padding: 5px;
+    text-align: center;
+}
+.sbtn {
+    height: 30px;
+}
+
+.resulting-search {
+    margin-top: 100px;
+}
+
+.card {
+    margin: auto;
+    background-color: rgb(43, 39, 100);
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    padding-left: 20px;
+    border-radius: 10px;
+    margin-top: 5rem;
+    font: 'Roboto Condensed';
+    font-size: 2rem;
+    text-align: left;
+    color: rgb(216, 215, 214);
+}
+
+.card div {
+    margin-left: 20px;
+}
+
+.hidden {
+    display: none;
+}
