@@ -2,9 +2,11 @@ const inputComida = document.querySelector("#food-input");
 
 const inputResult = document.querySelector("#result");
 
-const botao = document.querySelector(".btn");
+const botao = document.querySelector("#btns");
 
-const resultField = document.querySelector('.resulting-search')
+const botaoBack = document.querySelector("#btnb");
+
+const resultField = document.querySelector('.resulting-search');
 
 botao.addEventListener("click", function() {
     var query = inputComida.value;
@@ -14,9 +16,9 @@ botao.addEventListener("click", function() {
         headers: { 'X-Api-Key': 'FN741hlbSg1cIzAhGJz+PA==KKWiBc9U2hZjSY24'},
         contentType: 'application/json',
         success: function(result) {
-            console.log(result[0].name);
             document.querySelector('.search--field').classList.add('hidden');
-            resultField.classList.remove('hidden')
+            resultField.classList.remove('hidden');
+            botaoBack.classList.remove('hidden');
             result.forEach(result => {
                 var name = result.name;
                 var image
@@ -55,5 +57,9 @@ botao.addEventListener("click", function() {
     });
 
     
+});
+
+botaoBack.addEventListener("click", function() {
+    window.location.reload();
 });
 
